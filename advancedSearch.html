@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Google Advanced Search</title>
+        <style>
+            body{
+                font-family: Arial, Helvetica, sans-serif;
+            }
+
+            h2{
+                color:crimson;
+                padding-left: 42px;
+                padding-top: 26px;
+            }
+            #foo{
+                padding-left: 42px;
+            }
+            .space{
+                padding-bottom: 25px;
+                
+            }
+            .box{
+                height: 25px;
+                border-color: lightgrey;
+                border-width: 0.5px;
+                margin-right: 20px;
+            }
+            .font{
+                font-size: small;
+            }
+            #button{
+                position: relative;
+                left: 700px;
+                background-color: rgb(0, 110, 255);
+                color: white;
+                height: 30px;
+                border-color:cornflowerblue;
+                border-radius: 2px;
+            }
+            #link{
+                text-align: right;
+                top: 0;
+                right:0;
+                margin: 20px;
+            }
+            img{
+                position: absolute;
+                top: 0;
+                left: 0;
+                margin: 10px;
+            }
+
+        </style>
+    </head>
+    <body>
+        <div id="link">
+            <a href="index.html">Google Search</a>
+        </div>
+        <img src="google-logo.png" alt="GOOGLE" height="40px">
+
+        <h2>Advanced Search</h2>
+        <hr>
+            <div id = "foo">
+                <h3 style="padding-top: 24px;">Find pages with...</h3>
+                <form action="https://google.com/search" name="f"></form>
+                    <div class="space">
+                        <label>all of these words:</label>
+                        <input style="margin-left:77px" class="box" type="text" name="as_q" size="90px" >
+                        <label class="font">Type the important words</label>
+                    </div>
+                    <div class="space">
+                        <label>this exact word or phrase:</label>
+                        <input style="margin-left:22px" class="box" type="text" name="as_epq" size="90px">
+                        <label class="font">Put exact words in quotes</label>
+                    </div>
+                    <div class="space">
+                        <label>any of these words:</label>
+                        <input style="margin-left:65px" class="box" type="text" name="as_oq" size="90px">
+                        <label class="font">Type OR between all the words you want</label>
+                    </div>
+                    <div class="space">
+                        <label>none of these words:</label>
+                        <input style="margin-left:55px" class="box" type="text" name="as_eq" size="90px">
+                        <label class="font">Put a minus sign before the words you don't want</label>
+                    </div>
+                
+                <input id="button" type="submit" value="Advanced Search">
+            </div>
+            
+        </form>
+    </body>
+</html>

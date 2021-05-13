@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>Search</title>
+        <title>Google</title>
         <style>
             body{
                 font-family: Arial, Helvetica, sans-serif;
@@ -24,17 +24,29 @@
                 padding: 12px;
                 border-color: darkgrey;
             }
+            #links{
+                text-align: right;
+                top: 0;
+                right:0;
+                margin: 20px;
+            }
 
 
         </style>
     </head>
     <body>
+        <div id="links">
+            <a href="imageSearch.html">Image Search</a> &nbsp;
+            <a href="advancedSearch.html">Advanced Search</a>
+        </div>
+        
+
         <div class = "center">
                 <img src="google-logo.png" alt="GOOGLE" height="160px">
                 <form action="https://google.com/search">             
                     <input id= "box" type="text" name="q" size="60px">
                     <div id = "buttons">
-                        <input name=btnG type="submit" value="Google Search">
+                        <input name=btnG type="submit" value="Google Search" style="margin-right: 10px;">
                         
                         <input name=btnI type="submit" value="I'm Feeling Lucky">
                     </div>

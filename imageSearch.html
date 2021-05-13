@@ -1,12 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>Image Search</title>
+        <title>Google Images</title>
+        <style>
+            body{
+                font-family: Arial, Helvetica, sans-serif; 
+            }
+
+            .center{
+                text-align:center;
+                margin: 0;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translateX(-50%) translateY(-65%);
+                font-weight: lighter;
+            }
+            #buttons{
+                transform: translateY(80%);
+
+
+            }
+            #box{
+                border-width: 1px;
+                border-radius: 36px;
+                font-size: 20px;
+                padding: 12px;
+                border-color: lightgrey;
+            }
+            #link{
+                text-align: right;
+                top: 0;
+                right:0;
+                margin: 20px;
+            }
+
+
+        </style>
     </head>
     <body>
-        <form action="https://images.google.com/advanced_search">
-            <input type="text" name="q">
-            <input type="submit" value="Google Search">
-        </form>
+        <div id="link">
+            <a href="index.html">Google Search</a>
+        </div>
+        <div class = "center">
+                <img src="google_image.png" alt="GOOGLE" height="160px">
+                <form action="https://images.google.com/images">             
+                    <input id= "box" type="text" name="q" size="60px">
+                    <div id = "buttons">
+                        <input name=btnG type="submit" value="Search">
+                    </div>
+                </form>
+        </div> 
     </body>
 </html>
